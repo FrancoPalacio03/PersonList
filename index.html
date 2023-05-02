@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersonList</title>
+    <title id='tittle'>PersonList</title>
     <link href='/css/estilos.css' rel="stylesheet"/>
 </head>
-<body>
-    <div class='contenedor' id='cabecero'>PersonList</div>
+<body onload="ShowPersons()">
+    <div class='contenedor' id='cabecero' ">
+        <h1>PersonList</h1>
+    </div>
+    <div class='contenedor' >   
+        <div class='elemento'>
+            <ul id='persons'/>
+        </div>   
+    </div>
+    <div class="contenedor">
+        <div style="text-align: center";>
+            <button style="cursor:pointer" onclick="AddPerson()">+</button>
+        </div>
+        <form id='form'>
+              <input type="text" placeholder="Name" id='name'/>
+              <input type="text" placeholder="Surname" id='surname'/>
+    </div>
+    <script src="js/person.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
